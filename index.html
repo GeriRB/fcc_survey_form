@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <section id="form-section">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">* Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <label for="email" id="email-label">* Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your Email">
+            <label for="number" id="number-label">* Age:</label>
+            <input type="number" id="number" name="number" min="1" max="99" step="1" placeholder="Age">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown" name="role">
+                <option value="" disabled selected>Select an option</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full time job</option>
+                <option value="full-time-learner">Full time learner</option>
+                <option value="prefer-not-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+            <label for="definitely"><input type="radio" id="definitely" name="recommend">Definitely</label>
+            <label for="maybe"><input type="radio" id="maybe" name="recommend">Maybe</label>
+            <label for="not-sure"><input type="radio" id="not-sure" name="recommend">Not sure</label>
+            <label for="like">What do you like most in FCC:</label>
+            <select id="like" name="like">
+                <option value="" disabled selected>Select an option</option>
+            </select>
+        </form>
+    </section>
+</body>
