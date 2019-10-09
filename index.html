@@ -34,7 +34,27 @@
             <label for="like">What do you like most in FCC:</label>
             <select id="like" name="like">
                 <option value="" disabled selected>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
             </select>
+            <label>Things that should be improved in the future (Check all that apply): </label>
+            <label for="front-end"><input type="checkbox" id="front-end" name="improve">Front-end Projects</label>
+            <label for="back-end"><input type="checkbox" id="back-end" name="improve">Back-end Projects</label>
+            <label for="challenges"><input type="checkbox" id="challenges" name="improve">Challenges</label>
+            <label for="open-source-comm"><input type="checkbox" id="open-source-comm" name="improve">Open Source
+                Community</label>
+            <label for="gitter-help"><input type="checkbox" id="gitter-help" name="improve">Gitter help rooms</label>
+            <label for="videos"><input type="checkbox" id="videos" name="improve">Videos</label>
+            <label for="meetups"><input type="checkbox" id="meetups" name="improve">City Meetups</label>
+            <label for="wiki"><input type="checkbox" id="wiki" name="improve">Wiki</label>
+            <label for="forum"><input type="checkbox" id="forum" name="improve">Forum</label>
+            <label for="extra-courses"><input type="checkbox" id="extra-courses" name="improve">Additional
+                Courses</label>
+            <label for="comments">Any Comments or Suggestions?</label>
+            <textarea id="comments" placeholder="Write your comments here..."></textarea>
+            <input id="submit-button" type="submit" value="Submit">
         </form>
     </section>
 </body>
