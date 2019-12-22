@@ -4,10 +4,20 @@ html {
 
 h1 {
     font-size: 2em;
+    text-align: center;
+    color: white;
+    text-shadow: 1.5px 1.5px black;
 }
 
 body {
+    background:
+        linear-gradient(rgba(158, 25, 8, 0.7),
+            rgba(20, 17, 221, 0.7)),
+        url("meeting1.jpg");
     font-family: 'Source Sans Pro', sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 ul,
@@ -26,13 +36,53 @@ input,
 select,
 textarea {
     margin-top: 0.5em;
+    font-size: 0.8em;
+}
+
+textarea {
+    resize: none;
+    max-width: 100%;
+    width: 100%;
+    font-size: 1em;
+    font-family: inherit;
+    height: 5em;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+#description {
+    font-size: 1.25em;
+    font-style: italic;
+    text-align: center;
+    color: white;
 }
 
 #survey-form {
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 2em;
     border-radius: 3px;
+    font-size: 1.25em;
+    color: white;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#like {
+    width: 100%;
+}
+
+#submit {
+    border-radius: 1px;
+    border: none;
+    padding: 0.75em;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: rgb(158, 32, 32);
+    color: white;
+    cursor: pointer;
 }
